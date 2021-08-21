@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png">
+                </a>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="results.html">Results</a>
+                <a href="tel:+19344445663" class="hover-btn">Get in Touch</a>
+            </nav>
+            <div class='hidden-navbar'> 
+                <span onclick="openNav()">&#9776;</span>
+            </div> 
+            <!--Rightside navigation menu for mobile devises-->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="index.html" onclick="closeNav()">Home</a>
+                  <a href="results.html" onclick="closeNav()">Results</a>
+                  <a href="tel:+19344445663"  onclick="closeNav()" class="hover-btn">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="hero-image">
+            <div class="hero-text">
+              <h1>Maintenance Assist Welcomes You</h1>
+              <p>The Quality You Deserve</p>
+              <a href="results.html" class="hover-btn">See our results</a>
+            </div>
+        </div>
+        <div class="services-block">
+            <div class="services-container">
+                <div class="services-heading">
+                    <h2>Services</h2>
+                    <p>What's provided</p>
+                    <a href="tel:+19344445663" class="hover-btn">Contact</a>
+                </div>
+                <div class="services-main">
+                    <div class="unit">
+                        <img src="img/handyman.jpg">
+                        <p>Handyman</p>
+                    </div>
+                    <div class="unit">
+                        <img src="img/kran.jpg">
+                        <p>Plumber</p>
+                    </div>
+                    <div class="unit">
+                        <img src="img/painting.jpg">
+                        <p>Painting</p>
+                    </div>
+                    <div class="unit">
+                        <img src="img/shkaturka.jpg">
+                        <p>Plaster</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-block">
+            <h2>The results you want and need</h2>
+            <p>Assist Maintenance LLC has always operated under strong values aimed at exceeding client needs. Our communication channels are always open—our relationship with our clients begins on the first day of contact, and only ends once they’re fully satisfied with our work.</p>
+            <a href="results.html" class="hover-btn">See results</a>
+
+        </div>
+        <div class="contact-block">
+            <div class="contact-container">
+                <img src="img/contact.jpg">
+                <div class="contact-text">
+                    <p class="contact-heading">Contact Us</p>
+                    <p> We are committed to all of our clients, and look forward to working with you. Questions, comments or special requests? We would love to hear from you.</p> 
+                </div>
+                <form action="send.php" method="post">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter Your Name"         name="name" required>
+
+                    <label>Phone Number</label>
+                    <input type="text" placeholder="Enter Your Phone Number" name="number" required>
+
+                    <label>Subject</label>
+                    <input type="text" placeholder="Enter Your Phone Issue"  name="issue" required>
+
+                    <label>Message</label>
+                    <textarea id="subject" placeholder="Write something..."  name="subject"></textarea>
+
+                    <input type="submit" value="Submit" class='submit'>
+                </form>
+
+
+            </div>
+        </div>
+        <div class="address-container">
+            <div class="contact-text">
+                <p class="contact-heading">Our address</p>
+                <p>1374 Ocean avenue Brooklyn . NY 11230</p> 
+            </div>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A229c26acb9129125eba8269d5ca29342c02257bcdf15b42051e93893e00eb181&amp;source=constructor" width="100%" frameborder="0"></iframe>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="img/logo.png">
+                </a>
+            </div>
+            <div class="footer-contact">
+                <p>Contact</p>
+                <p><a href="tel:+19344445663">+1-934-444-5663</a></p>
+                <p><a href="mailto:perfectstileinc@gmail.com">perfectstileinc@gmail.com</a></p>
+            </div>
+            <div class="footer-dev">
+                <p>Designed and developed by <a href="https://instagram.com/mirzoboev_n">Mirzoboev</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
