@@ -1,0 +1,363 @@
+/*Fonts are used freely from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #26282d;
+    color: #fff;
+}
+
+/* navigation blocks code */
+header {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1e2025;
+    padding: 2em;
+    z-index: 1;
+
+}
+header a, .services-heading a {
+    color: #fff;
+    text-decoration: none;
+}
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    padding: 0.5em 1.5em;
+}
+.hover-btn {
+    border: 1px solid #fff;
+    transition: 0.5s;
+}
+
+.hover-btn:hover {
+    background-color: #fff;
+    color: #1e2025;
+}
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Rightside menu code*/
+.overlay {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #26282d;
+    opacity: 0.99;
+    overflow-x: hidden;
+    transition: 0.3s;
+  }
+
+  .overlay-content {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover {
+    color: #f1f1f1;
+  }
+  .closebtn {
+  
+    align-self: flex-end;
+    font-size: 60px;
+  }
+  .hidden-navbar {
+      display: none;
+  }
+  /* End of right side menu code */
+
+main {
+    width: 100%;
+    display: block;
+    margin: 7em auto;
+    
+}
+
+
+
+
+/* Hero block code */
+
+.hero-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/ny.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.hero-text {
+    font-size: 2em;
+    padding: 2em;
+}
+.hero-text a,   .text-block a, .services-heading a  {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    padding: 0.5em 1.5em;
+  }
+
+  /* Text block code */
+
+  .text-block {
+    display: block;
+    margin: 5em auto;
+    width: 50%;
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  /*Services block code*/
+.services-block {
+    background-color: #1e2025;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1em;
+}
+
+.services-container {
+    width: 80%;
+    margin: auto;
+}
+.services-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.unit {
+    width: 40%;
+}
+
+.unit img {
+    display: block;
+    max-width: 100%;;
+    border-radius: 50%;
+}
+
+/*Contact Us block of code */
+
+.contact-container {
+    width: 70%;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.contact-text {
+    text-align: center;
+}
+
+.contact-container img {
+    display: block;
+    max-width: 100%;;
+
+}
+.contact-heading {
+    font-size: 2em;
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+ 
+}
+input, textarea {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    padding: 1em 0;
+    margin: 1em 0;
+    color: #fff;
+}
+input:hover, textarea:hover {
+    border: 1px solid #fff;
+}
+textarea {
+    height:5em;
+    resize: none;
+}
+.submit {
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s;
+    font-size: 1em;
+    
+
+}
+.submit:hover {
+    border: 0;
+    background-color: #666;
+    color: #fff;
+    cursor: pointer;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff;
+  }
+
+  /* Address block code*/
+.address-container {
+    width: 70%;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.address-container iframe {
+    height: 450px;
+}
+
+/* footer block code */
+footer {
+    background-color: #1e2025;
+    padding: 1em;
+}
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.footer-contact a, .footer-dev a {
+    color: #fff;
+    
+
+}
+
+
+/*Services page hero block code */
+
+.services-hero-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/construction.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.services-hero-text {
+    font-size: 4em;
+    padding: 2em;
+}
+
+.item {
+    transition: .5s;
+}
+.item:hover {
+        filter: brightness(80%);
+}
+
+/*Adding code to make the webpages responsive*/
+@media screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+    .hero-text {
+        font-size: 1em;
+        padding: 1em;
+    }
+    .logo img {
+        max-width: 50%;
+        height: auto;
+    }
+
+    .hidden-navbar {
+        display: block;
+        font-size: 1.5em;
+    }
+    header {
+        padding: 0.5em 0;
+    }
+    main {
+        margin: 3em auto;
+    }
+
+    .services-main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 2em auto;
+    }
+    .unit {
+        width: 70%;
+    }
+    .text-block {
+        width: 70%;
+    }
+
+    .contact-container{
+        width: 90%;
+    }
+
+    .address-container{
+        width: 100%;
+    }
+    .address-container iframe {
+        height: 200px;
+    }
+    .footer-container {
+    text-align: center;
+        
+    }
+    .services-hero-text {
+        font-size: 2em;
+        padding: 2em;
+    }
+
+}
+
+
